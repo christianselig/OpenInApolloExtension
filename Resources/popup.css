@@ -1,0 +1,174 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background: #f2f1f6;
+    font: -apple-system-body;
+    padding: 0 16px;
+}
+
+h2 {
+    margin-left: 3px;
+}
+
+.cell {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell-description {
+    padding: 0 16px;
+    font: -apple-system-subheadline;
+    opacity: 0.6;
+}
+
+/*! uiswitch v1.1.0 | MIT License | github.com/fnky/css3-uiswitch */
+.uiswitch {
+    height: 31px;
+    width: 51px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+            appearance: none;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #e5e5e5;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+}
+
+.uiswitch::before {
+    height: 27px;
+    width: 47px;
+    box-sizing: border-box;
+    content: ' ';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    z-index: 1;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.uiswitch::after {
+    height: 27px;
+    width: 27px;
+    box-sizing: border-box;
+    content: ' ';
+    position: absolute;
+    border-radius: 27px;
+    background: #ffffff;
+    z-index: 2;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25), 0px 4px 11px 0px rgba(0, 0, 0, 0.08), -1px 3px 3px 0px rgba(0, 0, 0, 0.14);
+    -webkit-transition: width 280ms, -webkit-transform 300ms;
+    transition: width 280ms, -webkit-transform 300ms;
+    transition: transform 300ms, width 280ms;
+    transition: transform 300ms, width 280ms, -webkit-transform 300ms;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition-timing-function: cubic-bezier(0.42, 0.8, 0.58, 1.2);
+            transition-timing-function: cubic-bezier(0.42, 0.8, 0.58, 1.2);
+}
+
+.uiswitch:checked {
+    background-image: -webkit-linear-gradient(top, #4CD964 0%, #4dd865 100%);
+    background-image: linear-gradient(-180deg, #4CD964 0%, #4dd865 100%);
+}
+
+.uiswitch:checked::after {
+    -webkit-transform: translate3d(16px, 0, 0);
+            transform: translate3d(16px, 0, 0);
+    right: 18px;
+    left: inherit;
+}
+
+.uiswitch:active::after {
+    width: 35px;
+}
+
+.uiswitch:checked::before, .uiswitch:active::before {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+
+.uiswitch:disabled {
+    opacity: 0.5;
+    cursor: default;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.uiswitch:disabled:active::before, .uiswitch:disabled:active::after, .uiswitch:disabled:checked:active::before, .uiswitch:disabled:checked::before {
+    width: 27px;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.uiswitch:disabled:active::before {
+    height: 27px;
+    width: 47px;
+    -webkit-transform: translate3d(6px, 0, 0);
+            transform: translate3d(6px, 0, 0);
+}
+
+.uiswitch:disabled:checked:active::before {
+    height: 27px;
+    width: 27px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+}
+
+.uiswitch {
+    background-color: #e5e5e5;
+}
+
+.uiswitch::before {
+    background-color: #ffffff;
+}
+
+.uiswitch::after {
+    background: #ffffff;
+}
+
+.uiswitch:checked {
+    background-image: -webkit-linear-gradient(top, #4CD964 0%, #4dd865 100%);
+    background-image: linear-gradient(-180deg, #4CD964 0%, #4dd865 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1c1c1e;
+    }
+
+    .custom {
+        background-color: #39393d;
+    }
+
+    .custom::before {
+        background-color: #39393d;
+    }
+    
+    .cell {
+        background: #2c2c2e;
+    }
+}

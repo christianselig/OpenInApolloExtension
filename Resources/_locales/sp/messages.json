@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Abrir en Apollo",
+        "description": "El nombre de la extensión."
+    },
+    "extension_description": {
+        "message": "Abre los enlaces de Reddit en Apollo. Puede ser configurado en modo automático o manual.",
+        "description": "Descripción de lo que la extensión lleva a cabo."
+    }
+}
